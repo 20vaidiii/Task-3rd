@@ -1,0 +1,16 @@
+# Find the least common multiple (LCM) of two numbers using a loop.
+#Input: 4, 6
+#Output: 12
+
+
+a = 4
+b = 6
+
+lcm = max(a, b)
+
+while True:
+    if lcm % a == 0 and lcm % b == 0:
+        break
+    lcm += 1
+
+print("LCM:", lcm)

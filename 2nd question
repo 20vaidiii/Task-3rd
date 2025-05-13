@@ -1,0 +1,12 @@
+#Print the factorial of a number using a while loop.
+Input: 5
+Output: 120
+
+
+num = 5
+factorial = 1
+i = 1
+while i <= num:
+    factorial *= i
+    i += 1
+print("Factorial of", num, "is", factorial)

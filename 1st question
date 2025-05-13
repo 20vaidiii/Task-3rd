@@ -1,0 +1,20 @@
+#Check if a number is prime using a loop.
+#Input: A positive integer.
+# Output: "Prime" or "Not Prime".
+
+def is_prime(n):
+    if n <= 1:
+        return "Not Prime"
+    is_prime_flag = True
+
+    for i in range(2, n):
+        if n % i == 0:
+            is_prime_flag = False
+            break
+
+    if is_prime_flag:
+        return "Prime"
+    else:
+        return "Not Prime"
+number = int(input("Enter a positive integer: "))
+print(is_prime(number))

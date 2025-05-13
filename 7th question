@@ -1,0 +1,21 @@
+#Continuous Numbers in Triangle:
+#Input:10
+#Output:
+#1
+#2 3
+#4 5 6
+#7 8 9 10
+
+def continuous_triangle(n):
+    num = 1
+    row = 1
+    while num <= n:
+        for i in range(row):
+            if num > n:
+                break
+            print(num, end=' ')
+            num += 1
+        print()
+        row += 1
+
+continuous_triangle(10)

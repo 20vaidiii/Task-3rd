@@ -1,0 +1,18 @@
+# Print a square matrix of numbers with diagonals as 0:
+#1 2 3 4
+#5 0 0 8
+#9 0 0 12
+#13 14 15 16
+
+
+n = 4  
+num = 1  
+
+for i in range(n):
+    for j in range(n):
+        if i == j or i + j == n - 1:
+            print(0, end=' ')
+        else:
+            print(num, end=' ')
+            num += 1
+    print()  
